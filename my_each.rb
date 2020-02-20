@@ -1,6 +1,6 @@
 def my_each(collection)
-  counter = 0 
-  while counter < collection.length do |i|
+  i = 0 
+  while i < collection.length do |i|
     yield(collection[i]) 
-    return 
+    i += 1
 end
